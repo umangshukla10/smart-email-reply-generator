@@ -1,0 +1,21 @@
+services:
+  backend:
+    build:
+      context: ./reply-generator
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - GEMINI_URL=${GEMINI_URL:-https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=}
+      - GEMINI_KEY=${GEMINI_KEY}
+    restart: always
+
+  frontend:
+    build:
+      context: ./email-writer-react
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
