@@ -1,4 +1,5 @@
 # ✉️ Umang's AI Email Reply Generator (React + Spring Boot + Gemini API + Docker)
+<img width="1440" height="797" alt="Screenshot 2026-06-17 at 12 11 13 PM" src="https://github.com/user-attachments/assets/3a3bc062-47f9-49e8-b210-4cc4fa3756e3" />
 
 An enterprise-ready, AI-powered email assistant that automatically generates tailored, context-aware replies. Users can paste an incoming email, customize the tone, length, and language, provide key reply points, and manage their reply history.
 
